@@ -10,7 +10,10 @@ class Triangle
     if self.sides.all? { |x| x > 0 } && self.sides
       begin
         raise TriangleError
-          
+      rescue TriangleError => error
+        puts error.message
+      end
+    else
   
   class TriangleError < StandardError
     def message
