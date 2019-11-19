@@ -14,7 +14,8 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    elsif self.sides.uniq.
+    elsif self.sides.uniq.size == 1
+      :equality
   
   class TriangleError < StandardError
     def message
