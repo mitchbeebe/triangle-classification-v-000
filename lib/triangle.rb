@@ -13,7 +13,7 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    else
+    elsif 
   
   class TriangleError < StandardError
     def message
