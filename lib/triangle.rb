@@ -7,13 +7,14 @@ class Triangle
   end
   
   def kind
-    if self.sides.all? { |x| x > 0 } && self.sides
+    tri_ineq = self.sides[0] + self.sides[1] > self.sides[2] && self.sides[0] + self.sides[2] > self.sides[1] && self.sides[1] + self.sides[2] > self.sides[0]
+    if self.sides.all? { |x| x > 0 } && tri_ineq
       begin
         raise TriangleError
       rescue TriangleError => error
         puts error.message
       end
-    elsif 
+    elsif
   
   class TriangleError < StandardError
     def message
