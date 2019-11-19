@@ -9,6 +9,8 @@ class Triangle
   def kind
     if self.sides.all? { |x| x > 0 } && self.sides
       begin
+        raise TriangleError
+          
   
   class TriangleError < StandardError
     def message
