@@ -15,7 +15,12 @@ class Triangle
         puts error.message
       end
     elsif self.sides.uniq.size == 1
-      :equality
+      :equilateral
+    elsif self.sides.uniq.size == 2
+      :isosceles
+    else
+      :scalene
+      
   
   class TriangleError < StandardError
     def message
