@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  attr_accessor :one, :two, :three
+  attr_accessor 
   
   def initialize(one, two, three)
     
