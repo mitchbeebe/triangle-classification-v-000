@@ -7,7 +7,8 @@ class Triangle
   end
   
   def kind
-    if self.sides.any? { |x| x <= 0 } || self.sides
+    if self.sides.all? { |x| x > 0 } && self.sides
+      begin
   
   class TriangleError < StandardError
     def message
