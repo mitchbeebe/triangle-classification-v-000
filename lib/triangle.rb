@@ -4,16 +4,10 @@ class Triangle
   
   def initialize(one, two, three)
     @sides = [one, two, three].sort
-    
-    begin
-      raise TriangleError
-    rescue TriangleError => error
-      puts error.message
-    end
   end
   
   def kind
-    
+    if self.sides.any?
   
   class TriangleError < StandardError
     def message
