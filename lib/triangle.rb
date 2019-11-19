@@ -4,6 +4,7 @@ class Triangle
   
   def initialize(one, two , three)
     
+    
     begin
       raise TriangleError
     rescue TriangleError => error
